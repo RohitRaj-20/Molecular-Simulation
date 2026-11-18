@@ -1,0 +1,4 @@
+numpy
+scipy
+matplotlib
+# MDAnalysis   # optional: only for reading .xtc trajectories in analyze_agg_cg.py

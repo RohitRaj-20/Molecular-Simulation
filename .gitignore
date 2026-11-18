@@ -1,0 +1,31 @@
+# environment
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Martini force-field files are downloaded, not stored
+ff/*.itp
+ff/M3-Lipid-Parameters/
+
+# simulation runs and big GROMACS files
+solvents/
+dimer/
+agg/
+swap/
+test/
+aa_ref/
+*.tpr
+*.xtc
+*.trr
+*.cpt
+*.edr
+*.log
+*.xvg
+*.ndx
+\#*\#
+*.tmp
+
+# keep small, final results
+!results/
+!results/**

@@ -1,0 +1,241 @@
+{
+  "_comment": "Martini 3 mapping of Chol4CSN (residue CH4C). Atom names refer to Chol4CSN_clean.mol2. Bead types are STARTING CHOICES to be validated, see the runbook, part 2.",
+  "residue": "CH4C",
+  "ring_bond_nm": 0.29,
+  "steroid": {
+    "eth_type": "N2a",
+    "anchor_head": [
+      "C26",
+      "O1"
+    ],
+    "anchor_tail": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "heavy_atoms": [
+      "C26",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ]
+  },
+  "beads": [
+    {
+      "name": "LK",
+      "type": "C1",
+      "charge": 0,
+      "atoms": [
+        "C25",
+        "C27",
+        "C28",
+        "C29"
+      ]
+    },
+    {
+      "name": "PY_A",
+      "type": "TQ2",
+      "charge": 1,
+      "atoms": [
+        "N2",
+        "C10"
+      ],
+      "ring": "R_PY"
+    },
+    {
+      "name": "PY_B",
+      "type": "TC5",
+      "charge": 0,
+      "atoms": [
+        "C9",
+        "C8"
+      ],
+      "ring": "R_PY"
+    },
+    {
+      "name": "PY_C",
+      "type": "TC5",
+      "charge": 0,
+      "atoms": [
+        "C7",
+        "C11"
+      ],
+      "ring": "R_PY"
+    },
+    {
+      "name": "P1_A",
+      "type": "TC5",
+      "charge": 0,
+      "atoms": [
+        "C2",
+        "C3"
+      ],
+      "ring": "R_P1"
+    },
+    {
+      "name": "P1_B",
+      "type": "TC5",
+      "charge": 0,
+      "atoms": [
+        "C4",
+        "C5"
+      ],
+      "ring": "R_P1"
+    },
+    {
+      "name": "P1_C",
+      "type": "TC5",
+      "charge": 0,
+      "atoms": [
+        "C6",
+        "C1"
+      ],
+      "ring": "R_P1"
+    },
+    {
+      "name": "VIN",
+      "type": "SC4",
+      "charge": 0,
+      "atoms": [
+        "C12",
+        "C13"
+      ]
+    },
+    {
+      "name": "CN",
+      "type": "TN6a",
+      "charge": 0,
+      "atoms": [
+        "C56",
+        "N3"
+      ]
+    },
+    {
+      "name": "P2_A",
+      "type": "TC5",
+      "charge": 0,
+      "atoms": [
+        "C18",
+        "C19"
+      ],
+      "ring": "R_P2"
+    },
+    {
+      "name": "P2_B",
+      "type": "TC5",
+      "charge": 0,
+      "atoms": [
+        "C14",
+        "C15"
+      ],
+      "ring": "R_P2"
+    },
+    {
+      "name": "P2_C",
+      "type": "TC5",
+      "charge": 0,
+      "atoms": [
+        "C16",
+        "C17"
+      ],
+      "ring": "R_P2"
+    },
+    {
+      "name": "PR_A",
+      "type": "TC5",
+      "charge": 0,
+      "atoms": [
+        "C24",
+        "C20"
+      ],
+      "ring": "R_PR"
+    },
+    {
+      "name": "PR_B",
+      "type": "TC5",
+      "charge": 0,
+      "atoms": [
+        "C21",
+        "C22"
+      ],
+      "ring": "R_PR"
+    },
+    {
+      "name": "PR_C",
+      "type": "TN5a",
+      "charge": 0,
+      "atoms": [
+        "N1",
+        "C23"
+      ],
+      "ring": "R_PR"
+    }
+  ],
+  "bonds": [
+    [
+      "ETH",
+      "LK",
+      7000
+    ],
+    [
+      "LK",
+      "PY_A",
+      7000
+    ],
+    [
+      "PY_C",
+      "P1_A",
+      12000
+    ],
+    [
+      "P1_C",
+      "VIN",
+      12000
+    ],
+    [
+      "VIN",
+      "CN",
+      12000
+    ],
+    [
+      "VIN",
+      "P2_A",
+      12000
+    ],
+    [
+      "P2_C",
+      "PR_A",
+      12000
+    ]
+  ],
+  "ring_constraint_flex_k": 100000,
+  "default_angle_k": {
+    "chain": 80,
+    "ring_exit": 150,
+    "branch": 150
+  },
+  "link_min_nm": 0.33
+}

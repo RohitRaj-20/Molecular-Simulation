@@ -1,0 +1,20 @@
+; Martini 3 energy minimisation. FLEXIBLE turns the ring and steroid constraints into stiff bonds.
+define                   = -DFLEXIBLE
+integrator               = steep
+emtol                    = 1000
+emstep                   = 0.001
+nsteps                   = 20000
+cutoff-scheme            = Verlet
+verlet-buffer-tolerance  = 0.005
+coulombtype              = reaction-field
+rcoulomb                 = 1.1
+epsilon-r                = 15
+epsilon-rf               = 0
+vdwtype                  = cutoff
+vdw-modifier             = potential-shift-verlet
+rvdw                     = 1.1
+constraints              = none
+constraint-algorithm     = LINCS
+lincs-order              = 12
+lincs-iter               = 2
+pbc                      = xyz
